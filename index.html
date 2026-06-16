@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maven — Your family's AI logistics assistant</title>
+  <meta name="description" content="Maven aggregates your family's email, calendars, and messages into one trustworthy brain — so you never miss a thing and never have to re-explain.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0F1B2D;
+      --amber: #F59E0B;
+      --ink: #1c2733;
+      --muted: #5b6b7b;
+      --line: #e5e9ee;
+      --bg: #f7f9fb;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    .site-header {
+      background: var(--navy);
+      padding: 22px 24px;
+      display: flex;
+      justify-content: center;
+    }
+    .site-header svg { height: 56px; width: auto; display: block; }
+    .hero {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 72px 24px 40px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(245, 158, 11, 0.14);
+      color: #b46f00;
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      font-weight: 600;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 7px 16px;
+      border-radius: 999px;
+      margin-bottom: 28px;
+    }
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.1rem);
+      font-weight: 800;
+      line-height: 1.12;
+      margin: 0 0 18px;
+      color: var(--navy);
+      letter-spacing: -0.02em;
+    }
+    .sub {
+      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+      color: var(--muted);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .props {
+      max-width: 1040px;
+      margin: 56px auto 0;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .prop {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 30px 26px;
+      text-align: left;
+      box-shadow: 0 1px 2px rgba(15, 27, 45, 0.04);
+    }
+    .prop .icon { font-size: 2rem; line-height: 1; }
+    .prop h3 { margin: 16px 0 0; font-size: 1.12rem; font-weight: 700; color: var(--navy); }
+    @media (max-width: 760px) {
+      .props { grid-template-columns: 1fr; }
+      .hero { padding-top: 52px; }
+    }
+    .site-footer {
+      margin-top: 80px;
+      background: var(--navy);
+      color: #aebccb;
+      padding: 36px 24px;
+      text-align: center;
+      font-size: 0.92rem;
+    }
+    .site-footer a { color: #fff; text-decoration: none; font-weight: 600; }
+    .site-footer a:hover { color: var(--amber); text-decoration: underline; }
+    .site-footer .sep { margin: 0 12px; opacity: 0.4; }
+    .site-footer .copy { margin-top: 14px; opacity: 0.65; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <svg viewBox="0 0 400 100" width="400" height="100" role="img" aria-label="Maven">
+      <rect width="400" height="100" rx="14" fill="#0F1B2D"/>
+      <g fill="none" stroke="#F59E0B" stroke-linecap="round">
+        <line x1="44" y1="38" x2="92" y2="38" stroke-width="7"/>
+        <line x1="44" y1="56" x2="80" y2="56" stroke-width="7"/>
+        <line x1="44" y1="74" x2="68" y2="74" stroke-width="7"/>
+        <path d="M99 33 l6 7 l11 -15" stroke-width="7" stroke-linejoin="round"/>
+      </g>
+      <text x="150" y="65" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif"
+            font-size="48" font-weight="700" letter-spacing="2" fill="#FFFFFF"
+            dominant-baseline="middle">MAVEN</text>
+    </svg>
+  </header>
+
+  <main>
+    <section class="hero">
+      <span class="badge">Coming Soon</span>
+      <h1>Maven — Your family's AI logistics assistant</h1>
+      <p class="sub">Never miss a thing. Coordinate without re-explaining.</p>
+    </section>
+
+    <section class="props" aria-label="What Maven does">
+      <div class="prop">
+        <div class="icon">📧</div>
+        <h3>Reads your family email so you don't have to</h3>
+      </div>
+      <div class="prop">
+        <div class="icon">📅</div>
+        <h3>Catches scheduling conflicts before they happen</h3>
+      </div>
+      <div class="prop">
+        <div class="icon">👨‍👩‍👧</div>
+        <h3>Keeps every caregiver on the same page</h3>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="privacy.html">Privacy Policy</a>
+    <span class="sep">·</span>
+    <a href="terms.html">Terms of Service</a>
+    <div class="copy">© 2026 Morningside Design LLC. All rights reserved.</div>
+  </footer>
+</body>
+</html>

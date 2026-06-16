@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100" role="img" aria-label="Maven">
+  <rect width="400" height="100" rx="14" fill="#0F1B2D"/>
+  <!-- abstract schedule/list icon: three lines of decreasing width, amber, with a checkmark on the top line -->
+  <g fill="none" stroke="#F59E0B" stroke-linecap="round">
+    <line x1="44" y1="38" x2="92" y2="38" stroke-width="7"/>
+    <line x1="44" y1="56" x2="80" y2="56" stroke-width="7"/>
+    <line x1="44" y1="74" x2="68" y2="74" stroke-width="7"/>
+    <!-- checkmark on the top line -->
+    <path d="M99 33 l6 7 l11 -15" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+  <text x="150" y="65" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="48" font-weight="700" letter-spacing="2" fill="#FFFFFF"
+        dominant-baseline="middle">MAVEN</text>
+</svg>
